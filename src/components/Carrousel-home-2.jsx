@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "../index.css";
+import { useNavigate } from "react-router-dom";
 
 const slides = [
     {
@@ -23,9 +24,10 @@ const slides = [
         </div>
       ),
       bgColor: "bg-black/50",
+      link: "/detail",
     },
     {
-        image: "./src/assets/img/home-1.png",
+        image: "./src/assets/img/home-2.png",
         content: (
           <div className="flex w-[324px] h-[90px] p-2 ">
               <div className="flex flex-col">
@@ -43,16 +45,17 @@ const slides = [
           </div>
         ),
         bgColor: "bg-black/50",
+        link:""
     },
   ];
   
   function CardCarousel() {
     return (
-      <Swiper slidesPerView={1} spaceBetween={12} loop={true} className="max-w-xl">
+      <Swiper slidesPerView={1} spaceBetween={12} loop={false} className="max-w-xl">
         {slides.map((slide, index) => (
-          <SwiperSlide key={index} className="!w-auto">
+          <SwiperSlide key={index}>
             <div
-              className="relative w-[340px] h-[190px] bg-cover bg-center rounded-lg overflow-hidden"
+              className="relative w-[340px] h-[150px] bg-cover bg-center rounded-lg overflow-hidden cursor-pointer"
               style={{ backgroundImage: `url(${slide.image})` }}
             >
               <div className={`absolute bottom-1 ml-2  rounded-lg ${slide.bgColor}`}>
