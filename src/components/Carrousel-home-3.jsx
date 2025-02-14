@@ -1,16 +1,29 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import { MdOutlineSell } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
+import { SlLocationPin } from "react-icons/sl";
+import { TbCalendarClock } from "react-icons/tb";
 import "../index.css";
 
 const slides = [
   {
-    image: "/src/assets/img/home-3.png", // Ubicación en public
+    image: "/src/assets/img/home-3.png",
     content: (
-      <div className="flex flex-col">
-        <h3 className="font-bold text-black text-[12px]">Muse : Will of the People</h3>
-        <p className="text-sm text-black">Jakarta, Indonesia</p>
-        <p>July 23 2023</p>
+      <div className="flex flex-col gap-1">
+        <h3 className="font-bold text-black text-[10px] font-[Inter-SemiBold]">Muse : Will of the People</h3>
+        <div className="flex gap-1">
+          <SlLocationPin className="text-gray-500 w-[17px]" />
+          <p className="text-sm text-black text-[11px] font-[Inter-Regular]">Jakarta, Indonesia</p>
+        </div>
+        <div className="flex gap-1">
+          <TbCalendarClock className="text-gray-500 w-[17px]" />
+          <p className="text-sm text-black text-[11px] font-[Inter-Regular] ">July 23 2023</p>
+        </div>
+        <div className="flex text-[#EC441E] items-center gap-1">
+          <MdOutlineSell className="w-[20px] h-[20px] -scale-x-100"/>
+          <h1 className="font-[Inter-SemiBold]">IDR500.000</h1>
+        </div>
       </div>
     ),
     link: "/detail",
@@ -18,36 +31,110 @@ const slides = [
   {
     image: "/src/assets/img/home-4.png",
     content: (
-      <div className="flex flex-col justify-center w-full h-full p-4">
-        <h3 className="font-bold text-black">Another Event</h3>
-        <p className="text-sm text-black">Some Venue</p>
+      <div className="flex flex-col gap-1">
+        <h3 className="font-bold text-black text-[10px] font-[Inter-SemiBold]">One Direction : Where We Are</h3>
+        <div className="flex gap-1">
+          <SlLocationPin className="text-gray-500 w-[17px]" />
+          <p className="text-sm text-black text-[11px] font-[Inter-Regular]">Jakarta, Indonesia</p>
+        </div>
+        <div className="flex gap-1">
+          <TbCalendarClock className="text-gray-500 w-[17px]" />
+          <p className="text-sm text-black text-[11px] font-[Inter-Regular] ">Oct 29 2023</p>
+        </div>
+        <div className="flex text-[#EC441E] items-center gap-1">
+          <MdOutlineSell className="w-[20px] h-[20px] -scale-x-100"/>
+          <h1 className="font-[Inter-SemiBold]">IDR800.000</h1>
+        </div>
       </div>
     ),
-    link: "/another-detail",
+    link: "/detail",
+  },
+  {
+    image: "/src/assets/img/home-3.png",
+    content: (
+      <div className="flex flex-col gap-1">
+        <h3 className="font-bold text-black text-[10px] font-[Inter-SemiBold]">Muse : Will of the People</h3>
+        <div className="flex gap-1">
+          <SlLocationPin className="text-gray-500 w-[17px]" />
+          <p className="text-sm text-black text-[11px] font-[Inter-Regular]">Jakarta, Indonesia</p>
+        </div>
+        <div className="flex gap-1">
+          <TbCalendarClock className="text-gray-500 w-[17px]" />
+          <p className="text-sm text-black text-[11px] font-[Inter-Regular] ">July 23 2023</p>
+        </div>
+        <div className="flex text-[#EC441E] items-center gap-1">
+          <MdOutlineSell className="w-[20px] h-[20px] -scale-x-100"/>
+          <h1 className="font-[Inter-SemiBold]">IDR500.000</h1>
+        </div>
+      </div>
+    ),
+    link: "/detail",
   },
   {
     image: "/src/assets/img/home-4.png",
     content: (
-      <div className="flex flex-col justify-center w-full h-full p-4">
-        <h3 className="font-bold text-white">Concert Event</h3>
-        <p className="text-sm text-gray-200">Concert Venue</p>
+      <div className="flex flex-col gap-1">
+        <h3 className="font-bold text-black text-[10px] font-[Inter-SemiBold]">One Direction : Where We Are</h3>
+        <div className="flex gap-1">
+          <SlLocationPin className="text-gray-500 w-[17px]" />
+          <p className="text-sm text-black text-[11px] font-[Inter-Regular]">Jakarta, Indonesia</p>
+        </div>
+        <div className="flex gap-1">
+          <TbCalendarClock className="text-gray-500 w-[17px]" />
+          <p className="text-sm text-black text-[11px] font-[Inter-Regular] ">Oct 29 2023</p>
+        </div>
+        <div className="flex text-[#EC441E] items-center gap-1">
+          <MdOutlineSell className="w-[20px] h-[20px] -scale-x-100"/>
+          <h1 className="font-[Inter-SemiBold]">IDR800.000</h1>
+        </div>
       </div>
     ),
-    link: "/concert",
+    link: "/detail",
   },
   {
-    image: "/assets/img/home-4.png",
+    image: "/src/assets/img/home-3.png",
     content: (
-      <div className="flex flex-col justify-center w-full h-full p-4">
-        <h3 className="font-bold text-white">Exhibition</h3>
-        <p className="text-sm text-gray-200">Exhibition Venue</p>
+      <div className="flex flex-col gap-1">
+        <h3 className="font-bold text-black text-[10px] font-[Inter-SemiBold]">Muse : Will of the People</h3>
+        <div className="flex gap-1">
+          <SlLocationPin className="text-gray-500 w-[17px]" />
+          <p className="text-sm text-black text-[11px] font-[Inter-Regular]">Jakarta, Indonesia</p>
+        </div>
+        <div className="flex gap-1">
+          <TbCalendarClock className="text-gray-500 w-[17px]" />
+          <p className="text-sm text-black text-[11px] font-[Inter-Regular] ">July 23 2023</p>
+        </div>
+        <div className="flex text-[#EC441E] items-center gap-1">
+          <MdOutlineSell className="w-[20px] h-[20px] -scale-x-100"/>
+          <h1 className="font-[Inter-SemiBold]">IDR500.000</h1>
+        </div>
       </div>
     ),
-    link: "/exhibition",
+    link: "/detail",
   },
+  {
+    image: "/src/assets/img/home-4.png",
+    content: (
+      <div className="flex flex-col gap-1">
+        <h3 className="font-bold text-black text-[10px] font-[Inter-SemiBold]">One Direction : Where We Are</h3>
+        <div className="flex gap-1">
+          <SlLocationPin className="text-gray-500 w-[17px]" />
+          <p className="text-sm text-black text-[11px] font-[Inter-Regular]">Jakarta, Indonesia</p>
+        </div>
+        <div className="flex gap-1">
+          <TbCalendarClock className="text-gray-500 w-[17px]" />
+          <p className="text-sm text-black text-[11px] font-[Inter-Regular] ">Oct 29 2023</p>
+        </div>
+        <div className="flex text-[#EC441E] items-center gap-1">
+          <MdOutlineSell className="w-[20px] h-[20px] -scale-x-100"/>
+          <h1 className="font-[Inter-SemiBold]">IDR800.000</h1>
+        </div>
+      </div>
+    ),
+    link: "/detail",
+  },
+  
 ];
-
-// Agrupamos los slides en pares
 const groupSlidesInPairs = (slidesArray) => {
   const grouped = [];
   for (let i = 0; i < slidesArray.length; i += 2) {
@@ -62,11 +149,11 @@ function CardCarousel() {
 
   return (
     <Swiper
-      direction="vertical"       // Desplazamiento vertical
-      slidesPerView={1}          // Cada slide muestra un grupo (par)
-      spaceBetween={20}          // Espacio entre cada grupo
-      loop={false}                // Carrusel infinito
-      className="max-h-[600px] w-[720px]"  // Ajusta el ancho para que quepan 2 tarjetas
+      direction="vertical"       
+      slidesPerView={1}          
+      spaceBetween={3}         
+      loop={false}               
+      className="max-h-[200px] w-[720px]" 
     >
       {groupedSlides.map((group, index) => (
         <SwiperSlide key={index}>

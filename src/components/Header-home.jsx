@@ -8,16 +8,16 @@ import { CgOptions } from "react-icons/cg";
 
 function Header() {
   return (
-    <header className='flex flex-col p-4'>
+    <header className='flex flex-col py-1 px-4'>
       <div className='flex justify-between items-center'>
-        <img src={Options} alt="1" className='w-[32px] h-[32px]' />
-        <img src={Notifi} alt="2" className='w-[34px] h-[34px]' />
+        <img src={Options} alt="1" className='w-[32px] h-[30px]' />
+        <img src={Notifi} alt="2" className='w-[34px] h-[30px]' />
       </div>
       <div className="py-[20px] text-2xl font-[Inter-SemiBold]">
         <h1>Find</h1>
         <h1 className='text-[#761CBC]'>Trending Events</h1>
       </div>
-      <div className="flex items-center rounded-lg h-10 py-3 shadow-md mx-1">
+      <div className="flex items-center rounded-lg h-8 shadow-md mx-1">
       <IoIosSearch className="w-8 h-7" />
       <input
         type="text"

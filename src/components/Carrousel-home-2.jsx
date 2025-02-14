@@ -3,49 +3,55 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "../index.css";
 import { useNavigate } from "react-router-dom";
+import { SlLocationPin } from "react-icons/sl";
+import { TbCalendarClock } from "react-icons/tb";
 
 const slides = [
     {
       image: "./src/assets/img/home-1.png",
       content: (
-        <div className="flex w-[324px] h-[90px] p-2 ">
-            <div className="flex flex-col">
-                <h3 className=" font-bold text-white">Coldplay : Music of the Spheres</h3>
-                <p className="text-sm text-gray-200">Gelora Bung Karno Stadium..</p>
+        <div className="flex w-[324px] h-[90px] py-2 px-3 gap-2 bg-gradient-to-t from-[#2D264B]/90 to-[#2D264B]/30 rounded-lg">
+            <div className="flex flex-col gap-1">
+                <h3 className="text-[13px] font-bold text-white">Coldplay : Music of the Spheres</h3>
+                <div className="flex gap-1">
+                  <SlLocationPin className="text-white w-[17px]" />
+                  <p className="text-sm text-white text-[13px]">Gelora Bung Karno Stadium..</p>
+                </div>
+                <div className="flex gap-1 items-center">
+                  <TbCalendarClock className="text-white w-[17px]"/>
+                  <p className="text-white text-[12px]">November 15 2023</p>
+                </div>
             </div>
-            <div className="flex flex-col">
-                <p>
-
-                </p>
-                <h1>
-
-                </h1>
+            <div className="flex flex-col  justify-center text-start">
+              <p className="text-white">Start from</p>
+              <h1 className="font-[Inter-SemiBold] text-white">IDR1.100.000</h1>
             </div>
         </div>
       ),
-      bgColor: "bg-black/50",
       link: "/detail",
     },
     {
-        image: "./src/assets/img/home-2.png",
-        content: (
-          <div className="flex w-[324px] h-[90px] p-2 ">
-              <div className="flex flex-col">
-                  <h3 className=" font-bold text-white">Coldplay : Music of the Spheres</h3>
-                  <p className="text-sm text-gray-200">Gelora Bung Karno Stadium..</p>
-              </div>
-              <div className="flex flex-col">
-                  <p>
-  
-                  </p>
-                  <h1>
-  
-                  </h1>
-              </div>
-          </div>
-        ),
-        bgColor: "bg-black/50",
-        link:""
+      image: "./src/assets/img/home-2.png",
+      content: (
+        <div className="flex w-[324px] h-[90px] py-2 px-3 gap-2 bg-gradient-to-t from-[#2D264B]/90 to-[#2D264B]/30 rounded-lg">
+            <div className="flex flex-col gap-1">
+                <h3 className="text-[13px] font-bold text-white">Coldplay : Music of the Spheres</h3>
+                <div className="flex gap-1">
+                  <SlLocationPin className="text-white w-[17px]" />
+                  <p className="text-sm text-white text-[13px]">Gelora Bung Karno Stadium..</p>
+                </div>
+                <div className="flex gap-1 items-center">
+                  <TbCalendarClock className="text-white w-[17px]"/>
+                  <p className="text-white text-[12px]">November 15 2023</p>
+                </div>
+            </div>
+            <div className="flex flex-col  justify-center text-start">
+              <p className="text-white">Start from</p>
+              <h1 className="font-[Inter-SemiBold] text-white">IDR1.100.000</h1>
+            </div>
+        </div>
+      ),
+      link: "/detail",
     },
   ];
   
