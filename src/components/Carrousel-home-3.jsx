@@ -164,12 +164,11 @@ function CardCarousel() {
                 onClick={() => slide.link && navigate(slide.link)}
                 className="w-[166px] h-[203px] p-2  rounded-lg overflow-hidden cursor-pointer shadow-lg"
               >
-                {/* Parte superior: imagen */}
                 <div
                   className="h-[102px] w-[150px] bg-cover bg-center"
                   style={{ backgroundImage: `url(${slide.image})` }}
                 ></div>
-                {/* Parte inferior: cuadro de texto */}
+
                 <div className="pt-1">
                   {slide.content}
                 </div>
