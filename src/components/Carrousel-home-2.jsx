@@ -4,10 +4,12 @@ import "swiper/css/pagination";
 import "../index.css";
 import { SlLocationPin } from "react-icons/sl";
 import { TbCalendarClock } from "react-icons/tb";
+import img1 from '../assets/img/home-1.png';
+import img2 from '../assets/img/home-2.png';
 
 const slides = [
     {
-      image: "./src/assets/img/home-1.png",
+      image: img1,
       content: (
         <div className="flex w-[324px] h-[90px] py-2 px-3 gap-2 bg-gradient-to-t from-[#2D264B]/90 to-[#2D264B]/30 rounded-lg">
             <div className="flex flex-col gap-1">
@@ -30,7 +32,7 @@ const slides = [
       link: "/detail",
     },
     {
-      image: "./src/assets/img/home-2.png",
+      image: img2,
       content: (
         <div className="flex w-[324px] h-[90px] py-2 px-3 gap-2 bg-gradient-to-t from-[#2D264B]/90 to-[#2D264B]/30 rounded-lg">
             <div className="flex flex-col gap-1">

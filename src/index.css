@@ -1,5 +1,19 @@
 @import "tailwindcss";
 
+@font-face {
+    font-family: 'Inter-Black';
+    src: url(./assets/font/Inter_18pt-Black.ttf);
+}
+
+@font-face {
+    font-family: 'Inter-ExtraLight';
+    src: url(./assets/font/Inter_18pt-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: 'Inter-SemiBold';
+    src: url(./assets/font/Inter_18pt-SemiBold.ttf);
+}
 
 @font-face {
     font-family: 'Inter-Regular'; 

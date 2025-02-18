@@ -4,11 +4,13 @@ import "../index.css";
 import { MdOutlineSell } from "react-icons/md";
 import { SlLocationPin } from "react-icons/sl";
 import { TbCalendarClock } from "react-icons/tb";
+import home3 from "../assets/img/home-3.png";
+import home4 from "../assets/img/home-4.png";
 
 
 const slides = [
   {
-    image: "/src/assets/img/home-3.png",
+    image: home3,
     content: (
       <div className="flex flex-col gap-1">
         <h3 className="font-bold text-black text-[10px] font-[Inter-SemiBold]">Muse : Will of the People</h3>
@@ -26,10 +28,9 @@ const slides = [
         </div>
       </div>
     ),
-    link: "/detail",
   },
   {
-    image: "/src/assets/img/home-4.png",
+    image: home4,
     content: (
       <div className="flex flex-col gap-1">
         <h3 className="font-bold text-black text-[10px] font-[Inter-SemiBold]">One Direction : Where We Are</h3>
@@ -47,10 +48,9 @@ const slides = [
         </div>
       </div>
     ),
-    link: "./pages/detail",
   },
   {
-    image: "/src/assets/img/home-3.png",
+    image: home3,
     content: (
       <div className="flex flex-col gap-1">
         <h3 className="font-bold text-black text-[10px] font-[Inter-SemiBold]">Muse : Will of the People</h3>
@@ -68,10 +68,9 @@ const slides = [
         </div>
       </div>
     ),
-    link: "/detail",
   },
   {
-    image: "/src/assets/img/home-4.png",
+    image: home4,
     content: (
       <div className="flex flex-col gap-1">
         <h3 className="font-bold text-black text-[10px] font-[Inter-SemiBold]">One Direction : Where We Are</h3>
@@ -89,10 +88,9 @@ const slides = [
         </div>
       </div>
     ),
-    link: "/detail",
   },
   {
-    image: "/src/assets/img/home-3.png",
+    image: home3,
     content: (
       <div className="flex flex-col gap-1">
         <h3 className="font-bold text-black text-[10px] font-[Inter-SemiBold]">Muse : Will of the People</h3>
@@ -110,10 +108,9 @@ const slides = [
         </div>
       </div>
     ),
-    link: "/detail",
   },
   {
-    image: "/src/assets/img/home-4.png",
+    image: home4,
     content: (
       <div className="flex flex-col gap-1">
         <h3 className="font-bold text-black text-[10px] font-[Inter-SemiBold]">One Direction : Where We Are</h3>
@@ -131,7 +128,6 @@ const slides = [
         </div>
       </div>
     ),
-    link: "/detail",
   },
   
 ];

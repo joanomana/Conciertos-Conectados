@@ -5,6 +5,9 @@ import { IoChevronBack } from "react-icons/io5";
 import { SlOptions } from "react-icons/sl";
 import { SlLocationPin } from "react-icons/sl";
 import { TbCalendarClock } from "react-icons/tb";
+import detail1 from '../assets/img/detail-1.svg';
+import detail2 from '../assets/img/detail-2.svg';
+import detail3 from '../assets/img/detail-3.svg';
 
 
 
@@ -36,9 +39,9 @@ function Header () {
                     </div>
                     <div className="flex pt-4 gap-2 items-center">
                         <div className="relative flex items-center">
-                            <img src="../src/assets/img/detail-1.svg" alt="1" className="w-8" />
-                            <img src="../src/assets/img/detail-2.svg" alt="2" className="-ml-3 w-8" />
-                            <img src="../src/assets/img/detail-3.svg" alt="3" className="-ml-3 w-8"/>
+                            <img src={detail1} alt="1" className="w-8" />
+                            <img src={detail2} alt="2" className="-ml-3 w-8" />
+                            <img src={detail3} alt="3" className="-ml-3 w-8"/>
                         </div>
                         <p className="text-[13px] font-['Inter-Medium']">50K+ Participants</p>
                     </div>

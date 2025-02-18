@@ -3,7 +3,6 @@ import Header from '../components/Header-home';
 import Carrusel1 from '../components/Carrousel-home-1';
 import Carrusel2 from '../components/Carrousel-home-2';
 import Carrusel3 from '../components/Carrousel-home-3';
-import '../index.css'
 
 function Home() {
   return (

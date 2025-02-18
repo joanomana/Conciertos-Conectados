@@ -9,7 +9,7 @@ function Footer() {
                     <p className='text-[11px] font-[Inter-Regular]'>Start from</p>
                     <p className='text-[15px] font-[Inter-SemiBold]'>IDR1.100.000</p>
                 </div>
-                <Link to="/" className="flex items-center justify-end w-full h-full">
+                <Link to="/ticket" className="flex items-center justify-end w-full h-full">
                     <button className='bg-[#761CBC] text-white py-2 px-5 rounded-2xl text-[12px] font-[Inter-Medium]'>Buy Ticket</button>
                                    
                 </Link>
