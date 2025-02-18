@@ -1,4 +1,3 @@
-import '../index.css';
 import { Link } from "react-router-dom";
 import { IoChevronBack } from "react-icons/io5";
 import { SlOptions } from "react-icons/sl";
@@ -16,7 +15,7 @@ function Ticket() {
                 <div className="absolute p-7 right-2 text-white">
                     <SlOptions />
                 </div>
-                <div className='mt-[92px] mx-5 bg-white rounded-lg'>
+                <div>
                     <Carrusel />
                 </div>
             </div>
