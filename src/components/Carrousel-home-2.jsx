@@ -2,7 +2,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "../index.css";
-import { useNavigate } from "react-router-dom";
 import { SlLocationPin } from "react-icons/sl";
 import { TbCalendarClock } from "react-icons/tb";
 

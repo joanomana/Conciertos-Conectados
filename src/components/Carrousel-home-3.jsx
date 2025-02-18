@@ -1,10 +1,10 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import "../index.css";
 import { MdOutlineSell } from "react-icons/md";
-import { useNavigate } from "react-router-dom";
 import { SlLocationPin } from "react-icons/sl";
 import { TbCalendarClock } from "react-icons/tb";
-import "../index.css";
+
 
 const slides = [
   {
@@ -47,7 +47,7 @@ const slides = [
         </div>
       </div>
     ),
-    link: "/detail",
+    link: "./pages/detail",
   },
   {
     image: "/src/assets/img/home-3.png",
@@ -144,7 +144,6 @@ const groupSlidesInPairs = (slidesArray) => {
 };
 
 function CardCarousel() {
-  {/*const navigate = useNavigate();*/}
   const groupedSlides = groupSlidesInPairs(slides);
 
   return (
