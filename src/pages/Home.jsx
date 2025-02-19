@@ -9,7 +9,7 @@ function Home() {
     <div class="p-1">
 
         <Header />
-        <div className='pl-5'> 
+        <div className='pl-5 pt-3 pr-4'> 
             <Carrusel1 />
         </div>
         <div className='flex justify-between px-4 pt-[20px]'>

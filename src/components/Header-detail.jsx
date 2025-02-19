@@ -22,7 +22,7 @@ function Header () {
             <div className="absolute p-7 right-2 text-white"><SlOptions />
             </div>
             <div className="absolute w-full px-5">
-                <div className=" bg-white rounded-lg mt-25 w-full py-4 px-5 shadow-lg">
+                <div className=" bg-white rounded-lg mt-25 w-full py-4 px-5 shadow-lime-100 shadow-2xs">
                     <div className="space-y-1">
                         <div className="flex gap-1 font-[Inter-SemiBold]">
                             <h1>Coldplay </h1>
